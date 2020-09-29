@@ -15,7 +15,7 @@ const Navbar = () =>
     <NavLink
       to="/"
       exact
-    
+
       style={link}
       activeStyle={{
         background: 'darkblue'
@@ -39,4 +39,4 @@ const Navbar = () =>
     >Login</NavLink>
   </div>;
 
-  export default Navbar 
+  export default Navbar
