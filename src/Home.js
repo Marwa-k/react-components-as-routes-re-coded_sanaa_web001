@@ -9,7 +9,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 export default class Home extends Component {
   render() {
     return (
-      <h1>Home!</h1>
+       <Router>
+       <div>
+       <h1>Home!</h1>
+       <Navbar />
+       <Route exact path="/" component={Home} />
+       <Route exact path="/about" component={About} />
+       <Route exact path="/signup" component={Signup} />
+       <Route exact path="/login" component={Login} />
+     </div>
     );
   }
 }
