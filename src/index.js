@@ -17,5 +17,13 @@ const Home = () => {
 
 ReactDOM.render(
   <Home />,
+  (<Router>
+    <div>
+      <Navbar />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/login" component={Login} />
+    </div>
+  </Router>),
   document.getElementById('root')
 );
